@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="special">
+        <h1>Payment Form</h1>
+        <h2>Contact Details</h2>
+        <p>
+            Name:*<input type="text" name="name" id="mname" placeholder="Enter your name" required>
+        </p>
+        <p>
+            Father's Name:*<input type="text" name="fname" id="fname" placeholder="Enter your father's name" required>
+        </p>
+        <p>
+            Phone No:*<input type="number" name="ph" id="ph" placeholder="Enter your phone no" required>
+        </p>
+        <p>
+            <label>Email :</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        </p>
+        <p>
+            <label>Gender :- </label>
+            Male<input type="radio" name="gender" id="male" required>
+            Female<input type="radio" name="gender" id="female" required>
+        </p>
+        <p>
+            <label>Caste :-</label>
+            General<input type="checkbox" name="caste" id="general">
+            OBC<input type="checkbox" name="caste" id="obc">
+            SC<input type="checkbox" name="caste" id="SC">
+            ST<input type="checkbox" name="caste" id="ST">
+        </p>
+        <p>
+            Location:*<textarea name="address" id="address" placeholder="Enter your address" cols="30"
+                rows="10"></textarea>
+        </p>
+        <p>
+            <label>Pincode :</label>
+            <input type="number" name="pin" id="pin" placeholder="Enter your pincode" required>
+        </p>
+        <h2>Payment Details</h2>
+        <p>
+            <Label>Card type :</Label>
+            <select name="card type" id="card type" required>
+                <option value="">select a card type</option>
+                <option value="visa">Visa</option>
+                <option value="rupay">Rupay</option>
+                <option value="master">Master</option>
+            </select>
+        </p>
+        <p>
+            Card No:*<input type="number" name="card" id="card" placeholder="Enter your card no" required>
+        </p>
+        <p>
+            <label> Expiry Date :</label>
+            <input type="date" name="date" id="date">
+        </p>
+        <label>CVV :</label>
+        <input type="password" name="password" id="password" required>
+        </p>
+
+        <input type="button" value="Pay Now" name="pay now" id="pay">
+    </div>
+</body>
+
+</html>
